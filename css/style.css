@@ -1,5 +1,6 @@
 html{
 	width: 100%;
+	min-width: 350px;
 }
 
 * {
@@ -21,6 +22,11 @@ p {
 	margin-top: 206px;
 }
 
+.activity {
+	padding:50px;
+	background:linear-gradient(#fff2eb,#d9bba9); 
+}
+
 @media (min-width: 992px) {
 /*nav選單*/
 	.navbar{
@@ -36,6 +42,11 @@ p {
 iframe{
 	width: 750px;
 	height: 657px;
+}
+.fb{
+	text-align:center;
+	vertical-align: middle;
+	width: 100%;
 }
 }
 
@@ -58,7 +69,40 @@ iframe{
 		width: 350px;
 		height: 657px;
 	}
+	.fb{
+		text-align:center;
+		vertical-align: middle;
+		width: 100%;
 	}
+	}
+
+	@media (max-width: 450px) {
+		/*nav選單*/
+			.navbar{
+			padding-left:50px!important;
+			padding-right:50px!important;
+		}
+		.navbar-nav{
+			margin-top: 0px!important;
+		}
+		.navbar-brand img {
+			height: 150px;
+		}
+		.banner {
+			margin-top: 156px;
+		}
+		iframe{
+			width: 250px;
+			height: 657px;
+		}
+		.fb{
+			width: 100%;
+		}
+		.activity{
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+		}
 
 .banner .container-fluid {
 	padding:0!important;
@@ -67,17 +111,6 @@ iframe{
 .about {
 	padding:100px 0;
 	background-color: #ffffff;
-}
-
-.activity {
-	padding:50px;
-	background:linear-gradient(#fff2eb,#d9bba9); 
-}
-
-.fb{
-	text-align:center;
-	vertical-align: middle;
-	width: 100%;
 }
 
 .about img {
