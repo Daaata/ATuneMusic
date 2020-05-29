@@ -1,6 +1,6 @@
 html{
 	width: 100%;
-	min-width: 400px;
+	min-width: 350px;
 }
 
 * {
@@ -113,7 +113,11 @@ iframe{
 	background-color: #ffffff;
 }
 
-.about img {
+.about .container-fluid {
+	padding:0!important;
+}
+
+.about .carousel {
 	box-shadow:2px 2px 4px gray;
 }
 
@@ -155,14 +159,22 @@ iframe{
 	padding: 20px 10px;
 	margin-bottom: 10px;
 }
-.product img {
-	width:100%;
+
+.product .pic{
 	margin-bottom:20px;
 	border: 1px #999999 solid;
+	overflow:hidden;
+}
+
+.product img {
+	width:100%;
+	transform:scale(1,1);
+	transition: all 1s ease-out;
 }
 
 .product img:hover {
 	opacity: 0.7;
+	transform:scale(1.2,1.2);
 }
 
 .product_name {
