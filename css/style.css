@@ -119,6 +119,14 @@ iframe{
 
 .about .carousel {
 	box-shadow:2px 2px 4px gray;
+	max-height: 500px;
+	max-width: 334px;
+	margin: auto;
+}
+
+.about img{
+	max-height: 500px;
+	max-width: 334px;
 }
 
 .title {
