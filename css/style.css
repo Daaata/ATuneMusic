@@ -48,6 +48,7 @@ p {
 iframe{
 	width: 750px;
 	height: 657px;
+	background-color: #ffffff;
 }
 .fb{
 	text-align:center;
@@ -85,6 +86,7 @@ iframe{
 	iframe{
 		width: 350px;
 		height: 657px;
+		background-color: #ffffff;
 	}
 	.fb{
 		text-align:center;
@@ -121,6 +123,7 @@ iframe{
 		iframe{
 			width: 250px;
 			height: 657px;
+			background-color: #ffffff;
 		}
 		.fb{
 			width: 100%;
