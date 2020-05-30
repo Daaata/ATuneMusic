@@ -139,6 +139,10 @@ iframe{
 			vertical-align: middle;
 			width: 100%;
 		}
+		.MusicVideo{
+			padding-right: 0px;
+			padding-left: 0px;
+		}
 		}
 
 .banner .container-fluid {
