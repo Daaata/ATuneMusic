@@ -24,8 +24,14 @@ p {
 
 .activity {
 	padding:50px;
-	background:linear-gradient(#fff2eb,#d9bba9); 
+	background:linear-gradient(#ebcab5,#d9bba9); 
 }
+
+.MusicVideo {
+	padding:50px;
+	background:linear-gradient(#fff2eb,#ebcab5);
+}
+
 
 @media (min-width: 992px) {
 /*nav選單*/
@@ -44,6 +50,17 @@ iframe{
 	height: 657px;
 }
 .fb{
+	text-align:center;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.yt iframe{
+	width: 560px;
+	height: 315px;
+}
+
+.yt{
 	text-align:center;
 	vertical-align: middle;
 	width: 100%;
@@ -70,6 +87,16 @@ iframe{
 		height: 657px;
 	}
 	.fb{
+		text-align:center;
+		vertical-align: middle;
+		width: 100%;
+	}
+	.yt iframe{
+		width: 560px;
+		height: 315px;
+	}
+	
+	.yt{
 		text-align:center;
 		vertical-align: middle;
 		width: 100%;
@@ -102,6 +129,16 @@ iframe{
 			padding-right: 0px;
 			padding-left: 0px;
 		}
+		.yt iframe{
+			width: 224px;
+			height: 126px;
+		}
+		
+		.yt{
+			text-align:center;
+			vertical-align: middle;
+			width: 100%;
+		}
 		}
 
 .banner .container-fluid {
@@ -130,7 +167,7 @@ iframe{
 }
 
 .title {
-	font-size:30px;
+	font-size:36px;
 	font-weight: bold;
 }
 
@@ -172,12 +209,53 @@ iframe{
 	margin-bottom:20px;
 	border: 1px #999999 solid;
 	overflow:hidden;
+	position: relative;
 }
 
 .product img {
 	width:100%;
 	transform:scale(1,1);
 	transition: all 1s ease-out;
+}
+
+.product .info{
+	position: absolute;
+	color:#000; 
+	font-size: 3rem;
+	margin-top: 33%;
+	margin-left: 20%;
+	text-align: center;
+	font-weight:bold;
+}
+
+@media (min-width: 1280px) {
+	.product .info{
+		font-size: 5.5rem;
+	}
+}
+
+@media (min-width: 992px) and (max-width:1280px) {
+	.product .info{
+		font-size: 4.5rem;
+	}
+}
+
+@media (min-width: 450px) and (max-width:767px) {
+	.product .info{
+		margin-top: 33%;
+		margin-left: 22%;
+		font-size: 6.5rem;
+	}
+	.yt iframe{
+		width: 336px;
+		height: 189px;
+	}
+}
+
+@media (max-width: 450px) {
+	.product .info{
+		font-size: 5rem;
+	}
 }
 
 .product img:hover {
@@ -249,8 +327,20 @@ input[type=submit]:hover {
 footer {
 	background-color: #d9bba9;
 	padding:20px;
+	text-align:center;
+	vertical-align: middle;
 }
 
 footer p {
 	line-height: 30px;
+}
+
+footer a,a:link,a:visited{
+	text-decoration: none;
+	color: #000000;
+}
+
+footer a:hover{
+	text-decoration: none;
+	color: #363636;
 }
